@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-1-менеджер-e",
+  "editForm": "i-i-s-1-менеджер-e",
+  "external": false,
+  "caption": "Менеджер",
+  "name": "IIS1МенеджерL",
+  "className": "МенеджерL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-1-менеджер",
+      "modelProjection": "МенеджерL"
+    }
+  ]
+}

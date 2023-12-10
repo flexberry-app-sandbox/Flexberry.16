@@ -1,0 +1,129 @@
+﻿{
+  "name": "IIS1Заказ",
+  "modelName": "i-i-s-1-заказ",
+  "className": "Заказ",
+  "nameSpace": "IIS.1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "доставка",
+      "type": "i-i-s-1-тип-доставки",
+      "flexberryType": "ТипДоставки",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерЗаказа",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "клиент",
+      "relatedTo": "i-i-s-1-клиент",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "менеджер",
+      "relatedTo": "i-i-s-1-менеджер",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "товар",
+      "relatedTo": "i-i-s-1-товар",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "товары",
+      "relatedTo": "i-i-s-1-товары",
+      "inverse": "заказ"
+    },
+    {
+      "name": "оплата",
+      "relatedTo": "i-i-s-1-оплата",
+      "inverse": "заказ"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ЗаказE",
+      "modelName": "i-i-s-1-заказ",
+      "attrs": [
+        {
+          "name": "номерЗаказа",
+          "caption": "Номер заказа",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "доставка",
+          "caption": "Доставка",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ЗаказL",
+      "modelName": "i-i-s-1-заказ",
+      "attrs": [
+        {
+          "name": "номерЗаказа",
+          "caption": "Номер заказа",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "доставка",
+          "caption": "Доставка",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

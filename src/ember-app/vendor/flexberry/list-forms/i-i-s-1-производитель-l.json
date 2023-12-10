@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-1-производитель-e",
+  "editForm": "i-i-s-1-производитель-e",
+  "external": false,
+  "caption": "Производитель",
+  "name": "IIS1ПроизводительL",
+  "className": "ПроизводительL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-1-производитель",
+      "modelProjection": "ПроизводительL"
+    }
+  ]
+}

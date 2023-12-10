@@ -1,0 +1,63 @@
+﻿{
+  "name": "IIS1Оплата",
+  "modelName": "i-i-s-1-оплата",
+  "className": "Оплата",
+  "nameSpace": "IIS.1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "способ",
+      "type": "i-i-s-1-способ1",
+      "flexberryType": "Способ1",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "заказ",
+      "relatedTo": "i-i-s-1-заказ",
+      "inverse": "оплата"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОплатаE",
+      "modelName": "i-i-s-1-оплата",
+      "attrs": [
+        {
+          "name": "способ",
+          "caption": "Способ",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
