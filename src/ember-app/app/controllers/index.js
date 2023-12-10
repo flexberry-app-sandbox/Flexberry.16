@@ -22,19 +22,19 @@ export default Controller.extend({
             link: 'i-i-s-1-производитель-l',
             caption: i18n.t('forms.application.sitemap.справочник-по-товарам.i-i-s-1-производитель-l.caption'),
             title: i18n.t('forms.application.sitemap.справочник-по-товарам.i-i-s-1-производитель-l.title'),
-            icon: 'paperclip',
+            icon: 'edit',
             children: null
           }, {
             link: 'i-i-s-1-поставщик-l',
             caption: i18n.t('forms.application.sitemap.справочник-по-товарам.i-i-s-1-поставщик-l.caption'),
             title: i18n.t('forms.application.sitemap.справочник-по-товарам.i-i-s-1-поставщик-l.title'),
-            icon: 'folder',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-1-товар-l',
             caption: i18n.t('forms.application.sitemap.справочник-по-товарам.i-i-s-1-товар-l.caption'),
             title: i18n.t('forms.application.sitemap.справочник-по-товарам.i-i-s-1-товар-l.title'),
-            icon: 'suitcase',
+            icon: 'list',
             children: null
           }]
         }, {
@@ -46,7 +46,7 @@ export default Controller.extend({
             link: 'i-i-s-1-заказ-l',
             caption: i18n.t('forms.application.sitemap.заказ.i-i-s-1-заказ-l.caption'),
             title: i18n.t('forms.application.sitemap.заказ.i-i-s-1-заказ-l.title'),
-            icon: 'list',
+            icon: 'edit',
             children: null
           }]
         }, {
@@ -58,7 +58,7 @@ export default Controller.extend({
             link: 'i-i-s-1-клиент-l',
             caption: i18n.t('forms.application.sitemap.клиенты.i-i-s-1-клиент-l.caption'),
             title: i18n.t('forms.application.sitemap.клиенты.i-i-s-1-клиент-l.title'),
-            icon: 'book',
+            icon: 'list',
             children: null
           }]
         }, {
@@ -70,7 +70,7 @@ export default Controller.extend({
             link: 'i-i-s-1-менеджер-l',
             caption: i18n.t('forms.application.sitemap.менеджеры.i-i-s-1-менеджер-l.caption'),
             title: i18n.t('forms.application.sitemap.менеджеры.i-i-s-1-менеджер-l.title'),
-            icon: 'edit',
+            icon: 'list',
             children: null
           }]
         }
